@@ -1,0 +1,14 @@
+d:\users\lgarreta\documents\visual studio 2015\Projects\GUIPractica3\GUIPractica3\bin\Debug\GUIPractica3.exe.config
+d:\users\lgarreta\documents\visual studio 2015\Projects\GUIPractica3\GUIPractica3\obj\Debug\GUIPractica3.csprojResolveAssemblyReference.cache
+d:\users\lgarreta\documents\visual studio 2015\Projects\GUIPractica3\GUIPractica3\obj\Debug\GUIPractica3.frPrincipal.resources
+d:\users\lgarreta\documents\visual studio 2015\Projects\GUIPractica3\GUIPractica3\obj\Debug\GUIPractica3.Properties.Resources.resources
+d:\users\lgarreta\documents\visual studio 2015\Projects\GUIPractica3\GUIPractica3\obj\Debug\GUIPractica3.csproj.GenerateResource.Cache
+C:\Users\tp.aulas1\Downloads\GUIPractica3\GUIPractica3\bin\Debug\GUIPractica3.exe.config
+C:\Users\tp.aulas1\Downloads\GUIPractica3\GUIPractica3\obj\Debug\GUIPractica3.csprojResolveAssemblyReference.cache
+C:\Users\tp.aulas1\Downloads\GUIPractica3\GUIPractica3\obj\Debug\GUIPractica3.frPrincipal.resources
+C:\Users\tp.aulas1\Downloads\GUIPractica3\GUIPractica3\obj\Debug\GUIPractica3.Properties.Resources.resources
+C:\Users\tp.aulas1\Downloads\GUIPractica3\GUIPractica3\obj\Debug\GUIPractica3.csproj.GenerateResource.Cache
+C:\Users\tp.aulas1\Downloads\GUIPractica3\GUIPractica3\bin\Debug\GUIPractica3.exe
+C:\Users\tp.aulas1\Downloads\GUIPractica3\GUIPractica3\bin\Debug\GUIPractica3.pdb
+C:\Users\tp.aulas1\Downloads\GUIPractica3\GUIPractica3\obj\Debug\GUIPractica3.exe
+C:\Users\tp.aulas1\Downloads\GUIPractica3\GUIPractica3\obj\Debug\GUIPractica3.pdb
