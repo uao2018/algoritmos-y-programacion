@@ -1,0 +1,798 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usetheme{/AmsterdamblueLG01}
+
+\usepackage{epstopdf}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+
+% Flow chart
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows,positioning}
+
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+
+% Define block styles
+\tikzset{
+  block/.style={
+    rectangle, 
+    rounded corners,
+    minimum width=2cm, 
+    minimum height=0.5cm,
+    align=center, 
+    draw=black, 
+    fill=red!30,
+    text width=5em
+    },
+  startstop/.style={
+    rectangle, 
+    rounded corners,
+    minimum width=3cm, 
+    minimum height=1cm,
+    align=center, 
+    draw=black, 
+    fill=red!30
+    },
+  process/.style={
+    rectangle, 
+    minimum width=3cm, 
+    minimum height=1cm, 
+    align=center, 
+    draw=black, 
+    fill=blue!30
+    },
+  decision/.style={
+    rectangle, 
+    minimum width=3cm, 
+    minimum height=1cm, align=center, 
+    draw=black, 
+    fill=green!30
+    },
+  arrow/.style={thick,->,>=stealth},
+  dec/.style={
+    ellipse, 
+    align=center, 
+    draw=black, 
+    fill=green!30
+    },
+}
+
+
+
+% Items separation
+%\usepackage{enumitem}
+%\setlist{nolistsep}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Algoritmos
+\end_layout
+
+\begin_layout Subtitle
+Curso de Algoritmia y Programación
+\end_layout
+
+\begin_layout Institute
+
+\series medium
+Universidad Autonoma de Occidente – Cali 
+\begin_inset Newline newline
+\end_inset
+
+Depto.
+ Operaciones y Sistemas
+\begin_inset Newline newline
+\end_inset
+
+Facultad de Ingeniería
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Prof.
+ Luis E.
+ Garreta
+\series medium
+ U.
+\begin_inset Newline newline
+\end_inset
+
+lgarreta@uao.edu.co
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algoritmos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Un conjunto ordenado y finito de operaciones que permite hallar la solución
+ de un problema
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Resuelven un problema
+\end_layout
+
+\begin_layout Itemize
+Son una secuencia de pasos o instrucciones
+\end_layout
+
+\begin_layout Itemize
+Tiene unas entradas / Salidas
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Las entradas o elementos de entrada o datos de entrada son aquellas cosas
+ o datos que se requieren para poder realizar el algortimo a cabalidad.
+\end_layout
+
+\begin_layout Itemize
+La salida son los elementos o datos que se obtienen una vez se ejecuten
+ los pasos del algoritmo.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algoritmos vs Programas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+El énfasis de un algoritmo no está en la programación de computadores sino
+ en la definición de los pasos o instrucciones,
+\end_layout
+
+\begin_layout Itemize
+El énfasis de un programa está en ser ejecutado por un computador
+\end_layout
+
+\begin_layout Itemize
+El algoritmo es independiente del lenguaje / Sistema Operativo / Computador.
+ 
+\end_layout
+
+\begin_layout Itemize
+Los programas se crean a partir de algoritmos
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pasos para resolver un problema
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Entender el problema (con sus condiciones y características)
+\end_layout
+
+\begin_layout Enumerate
+Buscar / Diseñar una solución (ajustada a las condiciones y características)
+ 
+\end_layout
+
+\begin_layout Enumerate
+Poner en ejecución la solución 
+\end_layout
+
+\begin_layout Enumerate
+Verificar si la solución cumple lo que debe hacer
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ejemplo de un Algoritmo:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Tomarse un baño en una bañera
+\end_layout
+
+\begin_layout Standard
+Primero piense cuales serían los pasos:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="bottom" width="5cm">
+<column alignment="center" valignment="bottom">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Escrito en pseudocódigo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mostrado en un flujograma
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Llenar la bañera con agua
+\end_layout
+
+\begin_layout Enumerate
+Desvestirse 
+\end_layout
+
+\begin_layout Enumerate
+Meterse a la bañera 
+\end_layout
+
+\begin_layout Enumerate
+Bañarse 
+\end_layout
+
+\begin_layout Enumerate
+Salir del baño 
+\end_layout
+
+\begin_layout Enumerate
+Vaciar la bañera
+\end_layout
+
+\begin_layout Enumerate
+Vestirse
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/algoritmo-ducharse-simple.pdf
+	scale 70
+	BoundingBox 0bp 0bp 100bp 195bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Flujogramas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Inicialmente se puede emplear la notación de flujograma o diagrama de flujo
+ para presentar el diseño de un algoritmo.
+ 
+\end_layout
+
+\begin_layout Itemize
+El flujograma es una representación gráfica de los pasos que se llevarán
+ a cabo en el algoritmo
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Símbolo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/flow1.png
+	scale 30
+	BoundingBox 0bp 0bp 114bp 33bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inicio / Fin 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/flow2.png
+	scale 30
+	BoundingBox 0bp 0bp 134bp 60bp
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lectura de Datos 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/flow3.png
+	scale 30
+	BoundingBox 0bp 0bp 194bp 41bp
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Proceso 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/flow4.png
+	scale 30
+	BoundingBox 0bp 0bp 126bp 69bp
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Decisiones 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/flow5.png
+	scale 30
+	BoundingBox 0bp 0bp 134bp 56bp
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/lflow6.png
+	scale 50
+	BoundingBox 0bp 0bp 161bp 30bp
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Línea de Flujo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Otros Problemas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Diseñe un algoritmo para cada uno de los siguientes problemas
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Solicitar un libro en biblioteca.
+\end_layout
+
+\begin_layout Enumerate
+Ir a cine a ver una película.
+\end_layout
+
+\begin_layout Enumerate
+Ingresar dos números: A y B y calcular e imprimir su suma.
+\end_layout
+
+\begin_layout Enumerate
+Ingresar dos números: A y B y mostrar el mayor de ellos.
+\end_layout
+
+\begin_layout Enumerate
+Ingresar la notas de tres exámenes parciales para calcular y mostrar la
+ nota promedio.
+\end_layout
+
+\begin_layout Enumerate
+Ingresar las notas de tres exámenes parciales (parcial1:20%, parcial2: 30%,
+ parcial3: 50%) y mostrar la nota definitiva.
+\end_layout
+
+\begin_layout Enumerate
+Ingresar las notas de tres exámenes parciales, todos con el mismo valor,
+ calcular la definitiva y si es menor que 3.0 mostrar el mensaje: "Perdió
+ la matería", de lo contrario mostrar el mensaje "Gano la materia" y mostrar
+ la nota definitiva.
+\end_layout
+
+\begin_layout Enumerate
+Ingresar las notas de tres exámenes parciales, calcular la nota promedio
+ y mostrar un mensaje diciendo:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+"Nota baja" si es menor que 3.0
+\end_layout
+
+\begin_layout Enumerate
+"Nota alta" si es mayor que 4.5
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ingresar las notas de tres exámenes parciales, calcular la nota promedio
+ y mostrar un mensaje diciendo si es una nota regular, es decir si es mayor
+ que 3.0 y menor que 4.5.
+\end_layout
+
+\begin_layout Enumerate
+Ingresar tres número y mostrar cual es el mayor de ellos.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\end_body
+\end_document
